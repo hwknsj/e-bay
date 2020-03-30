@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import React, { useEffect, useState } from 'react'
 
 import { API_ROOT, get, params } from './api'
+import ErrorSnackbar from './components/ErrorSnackbar'
 import NavBar from './components/NavBar'
 import SideMenu from './components/SideMenu'
 import { styles } from './theme/styles'
@@ -56,6 +57,7 @@ const App = () => {
 
   return (
     <div className={classes.root}>
+      <ErrorSnackbar error={error} />
       <NavBar handleMenuToggle={handleMenuToggle} />
       <SideMenu
         handleMenuToggle={handleMenuToggle}

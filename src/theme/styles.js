@@ -1,13 +1,4 @@
-import 'typeface-inconsolata'
-
-import teal from '@material-ui/core/colors/teal'
-import { createMuiTheme } from '@material-ui/core/styles'
-
-export const theme = createMuiTheme({
-  typography: {
-    fontFamily: 'Inconsolata, Helvetica'
-  }
-})
+import red from '@material-ui/core/colors/red'
 
 export const sideMenuWidth = 280
 
@@ -36,7 +27,7 @@ export const styles = (theme) => ({
     padding: theme.spacing(2),
     height: '100%'
   },
-  sideMenuAnimations: {
+  sideMenuContent: {
     maxWidth: sideMenuWidth,
     padding: theme.spacing(2)
   },
@@ -45,7 +36,7 @@ export const styles = (theme) => ({
       width: `calc(100% - ${sideMenuWidth}px)`,
       marginLeft: sideMenuWidth
     },
-    backgroundColor: teal[400]
+    backgroundColor: '#227d4d'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -75,6 +66,7 @@ export const styles = (theme) => ({
       maxHeight: `calc(100% - ${theme.mixins.toolbar.minHeight}px)`
     },
     [theme.breakpoints.up('sm')]: {
+      position: 'absolute',
       maxWidth: `calc(100% - ${sideMenuWidth}px)`,
       maxHeight: `calc(100% - ${theme.mixins.toolbar.minHeight + 8}px)`
     }
@@ -99,5 +91,8 @@ export const styles = (theme) => ({
     display: 'block',
     lineHeight: '1rem',
     paddingTop: '4px'
+  },
+  errorSnackbar: {
+    backgroundColor: red[600]
   }
 })

@@ -9,7 +9,7 @@ const useStyles = makeStyles(styles)
 const Animations = () => {
   const classes = useStyles()
   return (
-    <div className={classes.sideMenuAnimations}>
+    <div className={classes.sideMenuContent}>
       <Skeleton />
       <Skeleton animation={false} />
       <Skeleton animation='wave' />

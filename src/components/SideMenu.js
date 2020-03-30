@@ -39,7 +39,10 @@ const SideMenuContent = ({
         </div>
         <Divider />
         <List style={{ paddingTop: 0, paddingBottom: 0 }}>
-          <p>{error.message}</p>
+          <p className={classes.sideMenuContent}>
+            {error.message ||
+              'Failed to fetch earthquake data, please try again.'}
+          </p>
         </List>
       </>
     )
@@ -61,7 +64,6 @@ const SideMenuContent = ({
               eq={eq}
               handleListItemClick={handleListItemClick}
               selected={eq.eqid === selectedEqId}
-              // {...props}
             />
           ))
         ) : (

@@ -30,8 +30,11 @@ const NavBar = (props) => {
             <MenuIcon />
           </IconButton>
         </Hidden>
-        <Typography variant='h6'>
-          E-bay <Typography variant='subtitle2'>(Earthquake-bay)</Typography>
+        <Typography variant='h6' component='span'>
+          E-bay{' '}
+          <Typography variant='subtitle2' component='span'>
+            (Earthquake-bay)
+          </Typography>
         </Typography>
       </Toolbar>
     </AppBar>
