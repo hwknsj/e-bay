@@ -1,6 +1,6 @@
 import red from '@material-ui/core/colors/red'
 
-export const sideMenuWidth = 280
+export const sideMenuWidth = 320
 
 export const styles = (theme) => ({
   root: {

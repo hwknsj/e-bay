@@ -2,6 +2,8 @@
 
 A simple React app leveraging the Google Maps API to visualize dynamically fetched earthquake data.
 
+Live version available at [https://e-bay.joel.fm/](https://e-bay.joel.fm/)
+
 ## usage
 
 Before running in development mode, add your Google Maps API key to the `.env` file located in the root directory.
