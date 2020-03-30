@@ -1,3 +1,17 @@
+# e-bay (earthquake bay)
+
+A simple React app leveraging the Google Maps API to visualize dynamically fetched earthquake data.
+
+## usage
+
+Before running in development mode, add your Google Maps API key to the `.env` file located in the root directory.
+
+## to-dos
+
+implement jest tests
+
+## boilerplate info
+<hr />
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
